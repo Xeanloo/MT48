@@ -6,18 +6,9 @@ A Python client for controlling the Merging Technologies MT48/Anubis audio inter
 
 This project provides a Python interface to control mixer settings on MT48/Anubis audio interfaces. It uses WebSocket communication with the CometD protocol to send real-time commands to the device, replicating the functionality of the built-in web interface.
 
-## What's in This Repository
-
-### Files I Created:
-
--   **`playground.ipynb`** - Main Python client implementation (Jupyter notebook)
--   **`playground.py`** - Alternative Python script version
--   **`MIXER_ID.yaml`** - Mixer configuration mapping for bus/strip IDs
--   **`README.md`** - This documentation file
-
 ### Web Source Code (From MT48 Device):
 
-The remaining files are the original JavaScript source code extracted from the MT48's web interface:
+The js files are the Original source code extracted from the MT48's web interface:
 
 ```
 common/                    # Shared libraries from MT48 web interface
@@ -68,7 +59,7 @@ client.set_mixer_setting(path="$._oem_ui_process_engine.music.mixer.busses[?(@.i
 ### Key JavaScript Files for Reference:
 
 -   `communicator.js` - Shows how WebSocket connection is established
--   `mixer_update.js` - Contains functions like `UpdateBusMasterGainValue()`
+-   `mixer_update.js` - Contains functions lfile`UpdateBusMasterGainValue()`
 -   `new_settings.js` - Demonstrates JSONPath usage for settings
 
 ## Gain Values
@@ -106,12 +97,3 @@ The original JavaScript files serve as documentation for how the official interf
 ## License
 
 This project interfaces with Merging Technologies hardware. The original JavaScript code belongs to Merging Technologies. This Python implementation is for educational and personal use.
-
-## Contributing
-
-When adding features:
-
-1. Reference the original JavaScript implementations
-2. Test with actual MT48 hardware
-3. Follow the existing JSONPath patterns
-4. Update `MIXER_ID.yaml` as needed

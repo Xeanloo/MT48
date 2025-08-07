@@ -1,0 +1,57 @@
+# MT48 Mixer Channel Configuration
+# Headphone2 Bus Configuration
+
+channels:
+    MIC1:
+        strip_id: 1000
+        nGroupID: null
+
+    MIC2:
+        strip_id: 1001
+        nGroupID: null
+
+    LINE3:
+        strip_id: 1002
+        nGroupID: null
+
+    LINE4:
+        strip_id: 1003
+        nGroupID: null
+
+    REV13_14:
+        strip_id: [14, 15]
+        nGroupID: null
+
+    DAW1_15_16:
+        strip_id: [100, 101] # Stereo pair
+        nGroupID: null
+
+    DAW2_17_18:
+        strip_id: [102, 103] # Stereo pair
+        nGroupID: null
+
+    ADAT_GRP:
+        strip_id: 1004
+        nGroupID: 7
+
+# MIX configuration
+mixes:
+    MIX1:
+        send_id: 2
+        name: "MIX1"
+    MIX2:
+        send_id: 3
+        name: "MIX2"
+    MIX3:
+        send_id: 4
+        name: "MIX3"
+    MIX4:
+        send_id: 5
+        name: "MIX4"
+
+# Group configuration
+groups:
+    group_7:
+        id: 7
+        name: "ADAT Group"
+        channels: ["ADAT_GRP"]

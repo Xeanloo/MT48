@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" type="image/x-icon" href="Neumann_Diamond_32.ico" />
+        <link rel="stylesheet" href="../common/css/normalize.css">
+        <link rel="stylesheet" href="../common/css/style.css">
+        <link rel="stylesheet" href="../common/settings/css/new_settings.css">
+        <link rel="stylesheet" href="../MT48_music/css/mixer.css">
+    </head>
+
+
+    <body onload="_bind()" onresize="OnMixerResize()">
+
+        <div id="popUpOverlay">
+            <div class="message">Attempting to reconnect</div>
+        </div>
+    
+        <div class="container">
+      
+            <div class="gridheader" id="header">
+
+                <div id="leftSection" class="headerFract">
+
+                    <div id="musicMainMenu" class="musicMainMenu" onclick="OpenMainMenu()">
+                        <div id="musicMainMenu-text" class="musicMainMenu-text">
+                            MENU
+                        </div>
+                    </div>
+                </div>
+
+                <div id="centralSection" class="headerFract">
+                </div>
+
+                <div id="rightSection" class="headerFract">
+                    <div id="sampleRateDisplay"></div>
+                        <a id="advancedLink"></a>
+                    <div id="slaveMasterInfo"></div>
+                    <div id="danteLogo"></div>
+                </div>
+
+            </div>
+
+
+            <div id="deviceAndSettingsContainer" class="deviceAndSettingsContainer">
+
+                <div id="newSettingsSection" class="settingsSection">
+                </div>
+
+                <div id="effectsSection" class="effectsSection">
+                </div>
+
+                <div id="mixerSection" class="mixerSection">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="settingsSectionPopupContainer" class="settingsSectionPopupContainer"></div>
+
+        <div id="mixerSectionPopupContainer" class="mixerSectionPopupContainer"></div>
+        <div id="mixerSectionPopupContainerZ1" class="mixerSectionPopupContainer"></div>
+        <div id="mixerSectionPopupContainerZ2" class="mixerSectionPopupContainer"></div>
+
+
+        <script type="text/javascript" src="../common/js/iScroll.js"></script>
+        <script type="text/javascript" src="../common/effects/js/complex.js"></script>
+        <script src="../music/js/music.js"></script>
+        <script src="../music/js/mixer.js"></script>
+        <script src="../music/js/mixer_event.js"></script>
+        <script src="../music/js/mixer_update.js"></script>
+        <script src="../music/js/mixer_popup.js"></script>
+        <script src="../common/dojoCometD/dojo/dojo.js"></script>
+        <script src="../common/js/jsonrouter.js"></script>
+        <script src="../common/js/vendor/jquery-2.1.0.min.js"></script>
+        <script src="../common/js/ZMANDefs.js"></script>
+        <script src="../common/js/lodash.merge.js"></script>
+        <script src="../common/js/RavennaDeviceCache.js"></script>
+        <script src="../common/js/communicator.js"></script>
+        <script src="../common/js/helper.js"></script>
+        <script src="../common/js/AccessControl.js"></script>
+        <script>
+            includeHTML();
+        </script>      
+        <script src="../common/settings/js/new_settings.js"></script>
+        <script src="../common/effects/js/effects.js"></script>
+
+    </body>
+
+</html>
